@@ -1,0 +1,45 @@
+.wrapper{
+    display: grid;
+    height: 100vh; /*vh는 브라우저 크기*/
+    grid-template-rows: 1fr 1fr 1fr; /*행 높이 비율*/
+    grid-template-columns: 350px 4fr;
+    grid-template-areas: 
+    "left head"
+    "left right"
+    "left right";
+}
+
+.header{
+    display: flex;
+    grid-area: head;
+    
+    margin: 0 auto;
+}
+
+.left{
+    display:grid;
+    grid-area: left;
+    background-color: lightcoral;
+    border-right: solid;
+    border-width: 1px;
+    grid-template-areas: 
+    "log"
+}
+
+.right{
+    display: flex;
+    grid-area: right;
+    background-color: lightcyan;
+}
+
+.login{
+    display: grid;
+    margin: 25px;
+    padding:30px;
+    background-color: yellow;
+    width: 240px;
+    height: 150px;
+
+    grid-area:log;
+    text-align:center;
+}
