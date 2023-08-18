@@ -2,7 +2,7 @@
     display: grid;
     height: 100vh; /*vh는 브라우저 크기*/
     grid-template-rows: 325px 1fr 1fr; /*행 높이 비율*/
-    grid-template-columns: 350px 4fr;
+    grid-template-columns: 350px 1fr;
     grid-template-areas: 
     "left head"
     "left right"
@@ -20,8 +20,6 @@
     display:grid;
     grid-area: left;
     background-color: lightcoral;
-    border-right: solid;
-    border-width: 1px;
     grid-template-areas: 
     "log"
 }
@@ -33,13 +31,52 @@
 }
 
 .login{
-    display: grid;
-    margin: 25px;
-    padding:30px;
-    background-color: yellow;
-    width: 240px;
-    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 25px 10px 20px;
+    padding: 5px 15px;
+    background-color: rgb(248, 248, 248);
+    width: 300px;
+    height: 280px;
+    text-align:left;
+}
 
-    grid-area:log;
-    text-align:center;
+.login-label {
+    display: block;
+    margin: 0 0 -5px;
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: .2em;
+}
+
+.login-form {
+    outline: none;
+    display: block;
+    background: rgb(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    width: 100%;
+    height: 3rem;
+    font-weight: 500;
+}
+
+.login-submit {
+    outline: none;
+    display: block;
+    background: #757575;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
 }
