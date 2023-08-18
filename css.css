@@ -1,7 +1,7 @@
 .wrapper{
     display: grid;
     height: 100vh; /*vh는 브라우저 크기*/
-    grid-template-rows: 1fr 1fr 1fr; /*행 높이 비율*/
+    grid-template-rows: 325px 1fr 1fr; /*행 높이 비율*/
     grid-template-columns: 350px 4fr;
     grid-template-areas: 
     "left head"
