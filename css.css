@@ -19,11 +19,13 @@
 .left{
     display:grid;
     grid-area: left;
-    background-color: lightcoral;
+    background-color: rgb(249, 222, 222);
     border-right: solid;
     border-width: 1px;
+    grid-template-rows: 1fr 4fr;
     grid-template-areas: 
     "log"
+    "block"
 }
 
 .right{
@@ -36,10 +38,22 @@
     display: grid;
     margin: 25px;
     padding:30px;
-    background-color: yellow;
+    background-color: rgb(255, 198, 235);
     width: 240px;
     height: 150px;
 
     grid-area:log;
     text-align:center;
+}
+
+.block_item{
+    display: flex;
+    grid-area: block;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.block{
+    background-color: bisque;
+    margin:25px;
 }
