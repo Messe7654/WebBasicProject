@@ -3,6 +3,8 @@
     height: 100vh; /*vh는 브라우저 크기*/
     grid-template-rows: 325px 1fr 1fr; /*행 높이 비율*/
     grid-template-columns: 350px 1fr;
+    grid-template-rows: 325px 1fr 1fr; /*행 높이 비율*/
+    grid-template-columns: 350px 1fr;
     grid-template-areas: 
     "left head"
     "left right"
@@ -89,6 +91,20 @@
     justify-content: flex-start;
 }
 
+.login-submit {
+    outline: none;
+    display: block;
+    background: #757575;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
 .block{
     background-color: bisque;
     margin:25px;
