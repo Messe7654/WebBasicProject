@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR:wght@300&display=swap');
+
+
 .wrapper {
     display: grid;
     height: 100vh; /*vh는 브라우저 크기*/
@@ -100,4 +103,23 @@
     height: 50px;
     justify-content: center;
     align-items: center;
+}
+
+.right div{
+    display: inline-block;
+    width: 900px;
+    height: 700px;
+    margin: 70px;
+    border-radius: 80px / 80px;
+    background-color: rgba(252, 253, 255, 0.904);
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.kongji li{    
+    margin: 40px;
+    font-size: 30px;
+}
+
+.kongji h1{
+    text-align: center;
 }
