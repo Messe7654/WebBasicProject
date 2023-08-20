@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     display: grid;
     height: 100vh; /*vh는 브라우저 크기*/
     grid-template-rows: 325px 1fr 1fr; /*행 높이 비율*/
@@ -11,14 +11,14 @@
     "left right";
 }
 
-.header{
+.header {
     display: flex;
     grid-area: head;
     
     margin: 0 auto;
 }
 
-.left{
+.left {
     display:grid;
     grid-area: left;
     background-color: rgb(249, 222, 222);
@@ -28,13 +28,13 @@
     "block"
 }
 
-.right{
+.right {
     display: flex;
     grid-area: right;
     background-color: lightcyan;
 }
 
-.login{
+.login {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -84,28 +84,20 @@
     font-weight: 600;
     cursor: pointer;
 }
-.block_item{
+
+.block_item {
     display: flex;
     grid-area: block;
     flex-direction: column;
     justify-content: flex-start;
+
 }
 
-.login-submit {
-    outline: none;
-    display: block;
-    background: #757575;
-    border: 0;
-    border-radius: 4px;
-    box-sizing: border-box;
-    padding: 12px 20px;
-    width: 100%;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-.block{
+.block {
+    display: flex;
     background-color: bisque;
-    margin:25px;
+    margin: 10px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
 }
